@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <header id="slideshow-container">
+
+            <img id="avatar-styling" class="pos-absolute" src="img/avatar.jpg">
+
+            <nav>
+                <li class="li-styling1 pos-absolute pos-li">CONTACT</li>
+                <li class="li-styling2 pos-absolute pos-li">PORTFOLIO</li>
+                <li class="li-styling3 pos-absolute pos-li">ABOUT ME</li>
+            </nav>
+
+            <h2 class="pos-header-heading pos-absolute">Hi, my name is Noury I code and design cool stuff</h2>
+            <p class="pos-header-paragraph pos-absolute">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. </p> 
+
+            <div class="gradient"><img class="slideshow" src="img/header_bg1.png"></div>
+            <div class="gradient"><img class="slideshow" src="img/header-bg2.png"></div>
+            <div class="gradient"><img class="slideshow" src="img/header-bg3.png"></div>
+            <div class="gradient"><img class="slideshow" src="img/header-bg4.png"></div>
+            <div class="gradient"><img class="slideshow" src="img/header-bg5.png"></div>
+            
+        </header>
+        <div class="clear"></div>
+
+        <script src="js/slider.js"></script>
+
+        <div id="featured-container">
+            <h2 id="featured-heading" class="pink-styling">featured portfolio</h3>
+            <div id="grid-tile-bg1" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">Digital Thinkers Conference</h3>
+                <p class="tag-styling">#client</p>
+                <p class="tag-styling">#design</p>
+                <p class="tag-styling">#code</p>
+            </div>
+            <div id="grid-tile-bg2" class="bg-cover grid-tile place-left"></div>
+            <div id="grid-tile-bg3" class="bg-cover grid-tile place-left"></div>
+            <div id="grid-tile-bg4" class="bg-cover grid-tile place-left"></div>
+            <div id="grid-tile-bg5" class="bg-cover grid-tile place-left"></div>
+            <div id="grid-tile-bg6" class="bg-cover grid-tile place-left"></div>
+        </div>
+        <div class="clear"></div>
+
+        <div id="button-container">
+            <button>MORE PORTFOLIO</button>
+        </div>
+
+        <div id="contact">
+            <h2 id="contact-heading">What can I do for you?<br>Let's get in touch</h2>
+
+            <div class="contact-container">
+                    <a href="#" class="contact-toggle">CONTACT</a>
+                    <div class="contact-none">
+                        <form>
+                            <label for="voornaam">Voornaam</label>
+                            <input type="text" id="voornaam" name="voornaam" placeholder="Jouw voornaam..">
+                            <label for="achternaam">Achternaam</label>
+                            <input type="text" id="achternaam" name="achternaam" placeholder="Jouw achternaam..">
+                        </form>
+                    </div>
+            </div>
+
+            <script src="js/accordion.js"></script>
+        </div>
+
+    </body>
+</html>
