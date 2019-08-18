@@ -37,11 +37,17 @@ h4 {
 
 /* Slideshow & Header Styling */
 
-img .slideshow {
+#slideshow-container {
     width: 100%;
 }
 
+.slideshow {
+    max-width: 100%;
+    height: 600px;
+}
+
 .gradient {
+    max-width: 100%;
     position: relative;
     display: inline-block;
     background-image: linear-gradient(0deg, rgba(255,175,227,1) 0%, rgba(0,118,255,0.6615021008403361) 100%);
@@ -400,6 +406,10 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 1250px){
+    .slideshow {
+        height: 400px;
+    }
+
     button {
         font-size: 1em;
     }
@@ -489,6 +499,10 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 800px) {
+    .slideshow {
+        height: 350px;
+    }
+
     .pos-header-paragraph {
         left: 45%;
         top: 31%;
@@ -511,6 +525,10 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 650px) {
+    #avatar-styling {
+        height: 110px;
+    }
+
     #contact-heading {
         font-size: 1.3em;
     }
@@ -521,22 +539,6 @@ input[type=submit]:hover {
 
     p{ 
         font-size: 0.7em;
-    }
-    .pos-header-heading {
-        left: 50%;
-        top: 20%;
-        width: 45%;
-    }
-
-    .pos-header-paragraph {
-        left: 50%;
-        top: 32%;
-        width: 45%;
-    }
-
-    #avatar-styling {
-        height: 125px;
-        top: 21%;
     }
 
     nav li {
@@ -549,5 +551,9 @@ input[type=submit]:hover {
 
     .li-styling3 {
         right: 45%;
+    }
+
+    #contact {
+        height: 270px;
     }
 }
