@@ -505,7 +505,7 @@ input[type=submit]:hover {
 
     .pos-header-paragraph {
         left: 45%;
-        top: 31%;
+        top: 27%;
         width: 45%;
     }
 
@@ -555,5 +555,27 @@ input[type=submit]:hover {
 
     #contact {
         height: 270px;
+    }
+}
+
+@media (max-width: 530px) {
+    #avatar-styling {
+        height: 95px;
+    }
+
+    h2 { 
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.6em;
+    }
+
+    .li-styling3 {
+        right: 52%;
+    }
+
+    .li-styling2 {
+        right: 26%;
     }
 }
