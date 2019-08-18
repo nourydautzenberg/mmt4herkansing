@@ -3,11 +3,8 @@
     <head>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-        <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/script.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <meta charset="UTF-8">
         <title>Portfolio</title>
     </head>
@@ -24,7 +21,7 @@
             </nav>
 
             <h2 class="pos-header-heading pos-absolute">Hi, my name is Noury I code and design cool stuff</h2>
-            <p class="pos-header-paragraph pos-absolute">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. </p> 
+            <p class="pos-header-paragraph pos-absolute">Scroll down for more info or if you want the info more in depth you could check out the "ABOUT ME" page.</p> 
 
             <div class="gradient"><img class="slideshow" src="img/header_bg1.png"></div>
             <div class="gradient"><img class="slideshow" src="img/header-bg2.png"></div>
@@ -35,26 +32,64 @@
         </header>
         <div class="clear"></div>
 
-        <script src="js/slider.js"></script>
+        <video id="videoplayer" controls>
+            <source src="vid/portvideo.mp4" type="video/mp4">
+        </video>
+
+        <div id="play-video">
+            <button onclick="Play()" id="play">PLAY/PAUSE</button>
+            <button id="rewind">REWIND</button>
+        </div>
 
         <div id="featured-container">
             <h2 id="featured-heading" class="pink-styling">featured portfolio</h3>
-            <div id="grid-tile-bg1" class="bg-cover grid-tile place-left">
+
+            <a href="sketch.html"><div id="grid-tile-bg1" class="bg-cover grid-tile place-left">
                 <h3 class="grid-tile-heading">Digital Thinkers Conference</h3>
                 <p class="tag-styling">#client</p>
                 <p class="tag-styling">#design</p>
                 <p class="tag-styling">#code</p>
-            </div>
-            <div id="grid-tile-bg2" class="bg-cover grid-tile place-left"></div>
-            <div id="grid-tile-bg3" class="bg-cover grid-tile place-left"></div>
-            <div id="grid-tile-bg4" class="bg-cover grid-tile place-left"></div>
-            <div id="grid-tile-bg5" class="bg-cover grid-tile place-left"></div>
-            <div id="grid-tile-bg6" class="bg-cover grid-tile place-left"></div>
+            </div></a>
+
+            <a href="sketch.html"><div id="grid-tile-bg2" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">Patsy Design Book</h3>
+                <p class="tag-styling">#read</p>
+                <p class="tag-styling">#design</p>
+                <p class="tag-styling">#book</p>
+            </div></a>
+
+            <a href="sketch.html"><div id="grid-tile-bg3" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">Interior Design</h3>
+                <p class="tag-styling">#interior</p>
+                <p class="tag-styling">#design</p>
+                <p class="tag-styling">#colors</p>
+            </div></a>
+
+            <a href="sketch.html"><div id="grid-tile-bg4" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">P5 Sketch</h3>
+                <p class="tag-styling">#p5</p>
+                <p class="tag-styling">#java</p>
+                <p class="tag-styling">#code</p>
+            </div></a>
+
+            <a href="sketch.html"><div id="grid-tile-bg5" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">Wallpaper Design</h3>
+                <p class="tag-styling">#adobe</p>
+                <p class="tag-styling">#design</p>
+                <p class="tag-styling">#colors</p>
+            </div></a>
+
+            <a href="sketch.html"><div id="grid-tile-bg6" class="bg-cover grid-tile place-left">
+                <h3 class="grid-tile-heading">Visual Design</h3>
+                <p class="tag-styling">#ux</p>
+                <p class="tag-styling">#design</p>
+                <p class="tag-styling">#adobe</p>
+            </div></a>
         </div>
         <div class="clear"></div>
 
         <div id="button-container">
-            <button>MORE PORTFOLIO</button>
+            <a href="sketch.html"><button>MORE PORTFOLIO</button></a>
         </div>
 
         <div id="contact">
@@ -63,16 +98,30 @@
             <div class="contact-container">
                     <a href="#" class="contact-toggle">CONTACT</a>
                     <div class="contact-none">
-                        <form>
-                            <label for="voornaam">Voornaam</label>
-                            <input type="text" id="voornaam" name="voornaam" placeholder="Jouw voornaam..">
-                            <label for="achternaam">Achternaam</label>
-                            <input type="text" id="achternaam" name="achternaam" placeholder="Jouw achternaam..">
-                        </form>
+                            <div class="acc-contact-container">
+                                    <form>
+                                  
+                                      <label for="voornaam">Voornaam</label>
+                                      <input type="text" id="voornaam" name="voornaam" placeholder="Jouw naam..">
+                                  
+                                      <label for="achternaam">Achternaam</label>
+                                      <input type="text" id="achternaam" name="achternaam" placeholder="Jouw achternaam..">
+                                  
+                                      <label for="onderwerp">Onderwerp</label>
+                                      <textarea id="onderwerp" name="onderwerp" placeholder="Je bericht.."></textarea>
+                                  
+                                      <input type="submit" value="Verzenden">
+                                  
+                                    </form>
+                            </div>
                     </div>
             </div>
 
-            <script src="js/accordion.js"></script>
+            <script src="https://vjs.zencdn.net/6.4.0/video.js"></script>
+            <script src="js/jquery-3.4.1.js"></script>
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/script.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         </div>
 
     </body>
